@@ -1,13 +1,809 @@
 body {
+  background: rgb(233, 233, 233);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Bebas Neue", cursive; */
+  /* font-family: "Krona One", sans-serif; */
+  /* font-family: "Orbitron", sans-serif; */
+  /* font-family: "Press Start 2P", cursive; */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.layout {
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* -----------------HEADER------------------ */
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+  margin: 5%;
+}
+
+.logo h3 {
+  display: block;
+  width: 40px;
+  flex-basis: 40px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.loguito img {
+  width: 62px;
+  margin-left: 20px;
+  padding: 0;
+  margin-top: 7px;
+}
+
+/* ------------------CONTENIDO---------------- */
+.content {
+  min-height: 450px;
+  padding-top: 5rem;
+}
+
+/* -------------------FOOTER---------------------- */
+.footer {
+  color: #f5f2e7;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  margin-top: 70px;
+  padding-top: 45px;
+  background: #000;
+  min-height: 50px;
+}
+
+/* -----------------------INICIO------------------------- */
+
+.home-text {
+  
+  display: flex;
+  margin: 0 4%;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil img {
+  width: 300px;
+  height: 300px;
+  border-radius: 170px;
+  border: 9px double #395b64d0;
+  transition: all 0.4s ease;
+}
+
+.perfil:hover img {
+  border: 11px double #121d20d0;
+}
+
+.contact-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-inicio a {
+  border-radius: 15px;
+  width: 30%;
+  display: block;
+  text-align: center;
+  margin: 30px 0;
+  color: white;
+  background: #03bbdb;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 3px;
+  transition: all 0.6s ease;
+}
+
+.contact-inicio a:hover {
+  display: block;
+  text-align: center;
+  color: white;
+  background: rgb(0, 20, 28);
+  padding: 14px 0;
+  letter-spacing: 6px;
+}
+
+.home h1 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 0;
+  background: #395b64;
+  color: white;
+  padding: 8px;
+}
+
+.home h2 {
+  color: rgb(52, 52, 52);
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 3%;
+  text-align: justify;
+}
+
+.home p {
+  color: rgb(52, 52, 52);
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 3%;
+  transition: all 0.3s ease;
+}
+
+.home p:hover {
+  color: #2666cf;
+}
+
+.home a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.home .heading {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #2c3333;
+  padding: 5px;
+}
+
+.page .heading {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+  background: #395b64;
+  color: white;
+  padding: 10px;
+}
+
+.tecnologias-project{
+
+  color: rgb(65, 65, 65);
+}
+
+.work-texto p{
+  font-family: 'Poppins', sans-serif;
+  margin: 30px 65px;
+  text-align: justify;
+}
+
+.work-texto a{
+  height: 25px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 150px;
+  margin-left: 39%;
+  width: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #03bbdb;
+  transition: all ease .3s;
+
+}
+
+.work-texto a:hover{
+  color: #03bbdb;
+  border: solid  1px #03bbdb;
+  background: #fff;
+
+}
+
+.work-text {
+
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* --------------------CONTACTO---------------------- */
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  padding: 15px;
+  width: 250px;
+  margin-top: 25px;
+  border: none;
+  background: rgb(220, 220, 220);
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  transition: all 0.6s ease;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  background: rgb(169, 197, 227);
+  border: none;
+  outline: none;
+}
+
+input[type="submit"],
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 150px;
+  margin-top: 25px;
+  margin-left: 60px;
+  border-radius: 100px;
+  border: none;
+  background: rgb(0, 54, 112);
+  color: #f5f2e7;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+input[type="submit"]:hover {
+  border: 1px solid rgb(0, 54, 112);
+  background: #f5f2e7;
+  color: rgb(0, 54, 112);
+  padding: 10px;
+}
+
+.page-contact {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14%;
+}
+
+.contact-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-email {
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.47);
+  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.333);
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #000;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.icon-email:hover {
+  flex-basis: 42%;
+  border: solid 1px #cf9f26;
+}
+
+.icon-email p {
+  flex-basis: 50%;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-left: 10px;
+  transition: all 0.5s ease;
+}
+
+.icon-email:hover p {
+  color: #cf9f26;
+  flex-basis: 50%;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.icon-email svg {
+  font-size: 22px;
+  flex-basis: 7%;
+  fill: black;
+  width: 20px;
+  transition: all 0.5s ease;
+}
+
+.icon-open {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.icon-email:hover .icon-open {
+  display: block;
+}
+
+.icon-correo {
+  transition: all 0.5s ease;
+}
+
+.icon-email:hover .icon-correo {
+  display: none;
+}
+
+.icon-email:hover svg {
+  fill: #cf9f26;
+}
+
+.heading-contact {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+  background: #395b64;
+  color: white;
+  padding: 10px;
+}
+
+.form-contact {
+  width: 40%;
+}
+
+.redes {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  max-width: 35%;
+  margin: 0 5%;
+}
+
+.redes a {
+  color: white;
+  cursor: pointer;
+}
+
+.redes a {
+  cursor: pointer;
+}
+
+.icon {
+  width: 85px;
+  transition: all 0.4s ease;
+}
+
+.icon:hover {
+  width: 100px;
+}
+
+.icon svg {
+  fill: #2666cf;
+  transition: all 0.4s ease;
+}
+
+.icon svg:hover {
+  fill: #03bbdb;
+}
+
+/* --------------------PORTAFOLIO---------------------- */
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  flex-basis: 30%;
+  flex-grow: 1;
+  margin: 30px;
+  border: none;
+  box-shadow: 0px 5px 15px rgb(209, 209, 209);
+  border-radius: 8%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.work-item:hover {
+  flex-basis: 32%;
+  box-shadow: 0px 5px 15px rgb(118, 118, 118);
+  background-color: #000;
+  color: white;
+}
+
+.work-item img {
+  width: 120%;
+  transition: all 0.8s ease;
+  cursor: auto;
+}
+
+.work-item:hover img {
+  width: 140%;
+  margin-right: 30%;
+}
+
+.work-item .mask {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border: none;
+  border-radius: 30px;
+}
+
+.page-work .mask {
+  height: 350px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgb(208, 208, 208);
+  border-radius: 10px;
+}
+
+.work-item span {
+  display: block;
+  color: gray;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.work-item h2 {
+  display: block;
+  font-size: 30px;
+  color: black;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.work-item:hover h2 {
+  color: #f5f2e7;
+}
+
+.work-item a {
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.work-item h3 {
+  display: block;
+  font-size: 15px;
+  color: #444;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.work-item:hover h3 {
+  color: rgb(220, 220, 220);
+}
+
+.text-error a {
+  text-decoration: none;
+  color: rgb(0, 104, 215);
+}
+
+.text-error a:hover {
+  color: rgb(0, 45, 93);
+}
+
+/* --------------------SERVICIOS---------------------- */
+
+.services {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  max-width: 90%;
+  text-align: justify;
+}
+
+.service {
+  margin-left: 8%;
+}
+
+.service a {
+  text-decoration: none;
+  color: #2666cf;
+}
+
+.service a:hover {
+  color: #cf9f26;
+}
+
+.contact-service {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-service a {
+  width: 25%;
+  display: block;
+  text-align: center;
+  margin: 0;
+  color: white;
+  background: #03bbdb;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 3px;
+  transition: all 0.6s ease;
+}
+
+.contact-service a:hover {
+  display: block;
+  text-align: center;
+  color: white;
+  background: rgb(0, 20, 28);
+  letter-spacing: 4px;
+}
+
+/* --------------------MEDIA QUERY---------------------- */
+
+/* -----------------------MEDIA960------------------------- */
+
+@media screen and (max-width: 960px) {
+  .layout {
+    width: 100%;
+  }
+
+  .perfil img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .page-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 10%;
+    max-height: 100%;
+  }
+
+  .heading-contact {
+    font-weight: 400;
+    letter-spacing: 7px;
+    font-size: 20px;
+    border-radius: 0;
+  }
+
+  .form-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 18%;
+    width: 80%;
+  }
+
+  .redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 5%;
+  }
+
+  .redes a {
+    color: white;
+    cursor: none;
+  }
+
+  .redes a {
+    cursor: none;
+  }
+
+  .icon {
+    width: 7rem;
+    transition: all 0.4s ease;
+  }
+
+  .work-texto p{
+    margin: 30px 40px;
+  }
+  
+  .work-texto a{
+    height: 30px;
+    font-size: 18px;
+    padding: 8px;
+    margin-left: 38%;
+    width: 10rem;
+  
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .work-texto a{
+
+    margin-left: 34%;
+  
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  /* --------------------HEADER MOD480---------------------- */
+
+  .layout {
+    width: 100%;
+  }
+
+  .logo {
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 2;
+    margin: 5%;
+  }
+
+  .logo h3 {
+    display: none;
+  }
+
+  .loguito img {
+    width: 3.5rem;
+    margin-top: 0.5rem;
+  }
+
+  /* -----------------------INICIO-MEDIA480------------------------- */
+
+  .home-text {
+    display: block;
+  }
+
+  .home h1 {
+    font-weight: 400;
+    letter-spacing: 6px;
+    font-size: 25px;
+  }
+
+  .home h2 {
+    color: rgb(52, 52, 52);
+    font-size: 25px;
+    font-weight: lighter;
+    margin-left: 3%;
+    text-align: center;
+  }
+
+  .perfil {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .perfil img {
+    width: 220px;
+    height: 220px;
+    border-radius: 170px;
+    border: 7px solid #0087e2;
+  }
+
+  .home .heading {
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    padding: 5px;
+  }
+
+  .page .heading {
+    letter-spacing: 6.5px;
+    font-size: 20px;
+    border-radius: 0;
+    margin-top: 0.2rem;
+  }
+
+  .contact-inicio {
+    display: block;
+    text-align: center;
+    width: 60%;
+    max-width: 60%;
+  }
+
+  .contact-inicio a {
+    width: 70%;
+    margin: 10px 0 10px 45%;
+    border-radius: 150px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.6s ease;
+  }
+
+  .works {
+    display: block;
+  }
+
+  .work-item h2 {
+    font-size: 25px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .work-item h3 {
+    padding-bottom: 10px;
+  }
+
+  /* -----------------------SERVICIOS-MEDIA480------------------------- */
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-bottom: 5%;
+  }
+
+  .contact-service {
+    margin-bottom: 20%;
+  }
+
+  .contact-service a {
+    padding: 20px;
+  }
+
+  /*-------------------------PROYECTO-------------------------------*/
+
+
+  .work-texto p{
+    margin: 30px 40px;
+  }
+  
+  .work-texto a{
+    height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 4px;
+    margin-left: 29%;
+    width: 10rem;
+    margin-bottom: 20px;
+
+  }
+
+  .page-work img {
+    width: 110%;
+  }
+  
+  .page-work .mask {
+    height: 250px;
+    border-radius: 0;
+  }
+
+
+  /* -----------------------FOOTER-MEDIA480------------------------- */
+
+  .footer {
+    font-size: 16px;
+    min-height: 50px;
+    max-height: 50px;
+    height: 100%;
+    margin: 0;
+  }
 }

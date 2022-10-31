@@ -1,0 +1,17 @@
+Para la creación de este proyecto se usaron los siguientes aspectos. 
+
+Dependencias:
+
+npm i styled-components
+npm i react-icons
+For GitHub: npm ghpages
+
+Extensiones:
+
+vscode-styled-components
+ES7 React snippets
+Reactjs code snippets
+generate-react-component
+Simple React Snippets
+Prettier
+ESLint
