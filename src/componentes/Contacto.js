@@ -8,12 +8,16 @@ export const Contacto = () => {
   return (
     <>
       <TitleContact />
+      <div className='mantenimiento'>
+          <p>AVISO: esta sección se encuentra en mantenimiento por el momento, pero puedes comunicarte conmigo por LinkedIn o por el siguiente correo.</p>
+        </div>
+        
       <div className='contact-email'>
+
         <div className='icon-email'>
           <FaEnvelope className='icon-correo' /><FaEnvelopeOpenText className='icon-open' />
           <p>pedrovenegasjob@gmail.com</p>
         </div>
-
       </div>
 
       <div className='page-contact page'>

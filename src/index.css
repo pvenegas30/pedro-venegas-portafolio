@@ -1,7 +1,12 @@
+*{
+
+  font-family: 'Poppins', sans-serif;
+}
+
+
 body {
   background: rgb(233, 233, 233);
   margin: 0;
-  font-family: "Open Sans", sans-serif;
   /* font-family: "Bebas Neue", cursive; */
   /* font-family: "Krona One", sans-serif; */
   /* font-family: "Orbitron", sans-serif; */
@@ -29,6 +34,7 @@ code {
 }
 
 .logo h3 {
+  font-family: Arial, Helvetica, sans-serif;
   display: block;
   width: 40px;
   flex-basis: 40px;
@@ -69,6 +75,11 @@ code {
   margin: 0 4%;
   justify-content: center;
   align-items: center;
+}
+
+.home-text h2{
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .perfil img {
@@ -217,13 +228,27 @@ code {
 }
 
 .work-text {
-
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-family: 'Poppins', sans-serif;
 }
 
 
+
 /* --------------------CONTACTO---------------------- */
 
+.mantenimiento p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-left: 25%;
+}
+.mantenimiento p{
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
 input[type="text"],
 input[type="email"],
 textarea {
@@ -461,13 +486,13 @@ input[type="submit"]:hover {
 .work-item span {
   display: block;
   color: gray;
-  margin-top: 40px;
+  margin-top: 0;
   margin-left: 20px;
 }
 
 .work-item h2 {
   display: block;
-  font-size: 30px;
+  font-size: 25px;
   color: black;
   margin-top: 5px;
   margin-left: 20px;
@@ -513,7 +538,7 @@ input[type="submit"]:hover {
 
 .services {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 35px;
   max-width: 90%;
   text-align: justify;
@@ -521,6 +546,16 @@ input[type="submit"]:hover {
 
 .service {
   margin-left: 8%;
+}
+
+.service h2{
+
+  text-align: center;
+}
+
+.service ul{
+
+  text-align: left;
 }
 
 .service a {

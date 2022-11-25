@@ -5,7 +5,7 @@ export const trabajos = [
         "url": "https://github.com/pvenegas30/chat-app",
         "tecnologias": "HTML, SASS, JS, REACT, FIREBASE",
         "categorias": "Desarrollo de App",
-        "descripcion": "Chat App es una aplicación creada con una funcionalidad a tiempo real para enviar mensajes a usuarios que sean registrados. Para lograrlo, se aplicaron tecnologías como HTML, SASS, JS, REACT y FIREBASE. Chat App is an application created with real-time functionality to send messages to registered users. To achieve this, technologies such as HTML, SASS, JS, REACT and FIREBASE were applied."
+        "descripcion": "Chat App es una aplicación creada con una funcionalidad a tiempo real para enviar mensajes a usuarios que sean registrados. Para lograrlo, se aplicaron tecnologías como HTML, SASS, JS, REACT y FIREBASE. English: Chat App is an application created with real-time functionality to send messages to registered users. To achieve this, technologies such as HTML, SASS, JS, REACT and FIREBASE were applied."
     },
     {
         "id": "weatherapp",
